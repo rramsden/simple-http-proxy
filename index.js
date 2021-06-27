@@ -1,11 +1,11 @@
-const app = express()
 const basicAuth = require('express-basic-auth')
 const express = require('express')
 const request = require('request')
+const app = express()
 
 const API_KEY = process.env.API_KEY
 if (API_KEY == null) {
-  console.log(`Please specify ${API_KEY}`)
+  console.log('Please specify $API_KEY')
   process.exit(1)
 }
 
